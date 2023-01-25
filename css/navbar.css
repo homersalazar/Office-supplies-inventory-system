@@ -1,0 +1,21 @@
+.topbar .sticky-top .navbar{ 
+    background-image: url("../assets/home-bg.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.topbar .sticky-top .navbar  li a{
+    color: #000;
+}
+
+.middle{
+    left: 0;
+    margin: auto; 
+    position: absolute; 
+    right: 0;
+    text-align: center;
+    top: 4.8em;
+    width: 29%;
+    z-index: 1; 
+}

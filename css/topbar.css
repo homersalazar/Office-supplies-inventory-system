@@ -1,0 +1,23 @@
+.topbar-container h2{
+    font-weight: bold;
+}
+
+.topbar-container .nav-main .menu-container {
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.topbar-container .menu-container li a {
+    font-size: 17px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: dotted !important;
+  }
+
+.nav-link{
+    color: #000;
+}

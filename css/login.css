@@ -1,0 +1,30 @@
+.login-container h2{
+    font-weight: bold;
+}
+
+.login-container a:hover{
+    color: var(--primary);
+}
+
+#email{ 
+    margin-left: 155px;
+}
+
+.login-container #password{
+    margin-left: 167px;
+}
+
+.login-container .button1{
+    margin: 20px 0px 0px 150px;
+}
+
+.button1{
+    border-radius: 20px;
+    color: #fff;
+}
+
+.button1:hover{
+    background: #000;
+    color: #fff;
+    border: #000;
+}

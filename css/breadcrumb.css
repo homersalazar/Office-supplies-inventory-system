@@ -1,0 +1,13 @@
+.breadcrumb{
+    margin-left: 365px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.breadcrumb li a{
+    color: rgba(0, 0, 255, 0.466);
+}
+
+.breadcrumb li {
+    color: gray;
+}

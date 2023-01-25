@@ -1,0 +1,44 @@
+.product-container .buttons:hover{
+    background-color: #000;
+    border-color: #000;
+    box-shadow: none;
+}
+
+.product-container #submit{
+    border-radius: 20px;
+
+}
+
+/* my orders */
+.product-container .card{
+    width: 20rem; 
+    /* height: 23rem; 
+    margin-top: auto; 
+    margin-bottom: auto; */
+}
+
+/* add quantity */
+.add_quantity-container .table-striped .headers {
+    width: 263px !important;
+} 
+
+.dynamic-row{
+    width: 266px !important;
+    background: #fff !important;
+    text-transform: capitalize;
+}
+
+.li-search{
+    width: 286px;
+    border-top: none;
+    border: skyblue 1px solid;
+}
+
+.li-output{
+    margin: 5px 0px 0px 10px;
+
+}
+
+.input-group .part{
+    width: 25%;
+}
