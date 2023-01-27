@@ -12,7 +12,7 @@
             $r_date = $row['added_at'];
             $qty = $row['quantities'];
             $stats = 1;
-            if($sol > $qty){
+            if($sol >= $qty){
 
                 $sql1 = "INSERT INTO quantity_record (product_id, qty , stats , added_by) 
                 VALUES ('$sku' , '$qty' , '$stats' , '$customer')";

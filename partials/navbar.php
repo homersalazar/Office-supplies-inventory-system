@@ -38,7 +38,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href=""><img src="../assets/home-user.png" alt="home user" width="30" height="30"></a>
+                                <a href="user_details.php"><img src="../assets/home-user.png" alt="home user" width="30" height="30"></a>
                             </li>
                         </ul>
                         <?php }else{ ?>

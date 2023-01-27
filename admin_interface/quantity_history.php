@@ -6,7 +6,7 @@
     include_once("../message/message_box.php");
     include_once("../partials/productbar.php");
     $id = $_GET['id'];
-    $sql = "SELECT * , date_format(quantity_record.added_at,'%m-%d-%Y') AS dates
+    $sql = "SELECT * , date_format(quantity_record.added_at,'%m-%d-%Y') AS dates, fname , quantity_record.stats AS actions
     FROM quantity_record 
     LEFT JOIN product_record
     ON product_record.prod_id = quantity_record.product_id
@@ -16,6 +16,8 @@
     ON product_record.size = size_tbl.size_id
     LEFT JOIN unit_tbl  
     ON product_record.unit = unit_tbl.unit_id
+    LEFT JOIN user_record  
+    ON user_record.user_id = quantity_record.added_by
     WHERE product_id = '$id'
     -- GROUP BY 
     ORDER BY dates ASC
@@ -48,6 +50,7 @@
                         <th scope="col">Product</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Status</th>
+                        <th scope="col">User</th>
                         <th scope="col">Date</th>
                     </tr>
                 </thead>
@@ -55,7 +58,7 @@
                     <?php  while($row = mysqli_fetch_array($result)){ 
                         $color = !empty($row["colors"])  ? "| Color: ".ucwords($row["colors"]) : "" ;
                         $stat = "";
-                        $status = $row['stats'];
+                        $status = $row['actions'];
                         if($status == 0){
                             $stat = "Stock - In";
                         }else{
@@ -72,6 +75,7 @@
                             <td class="pt-3"><input type="text" id="qty" name="qty[]" form="edit_form" value="<?php echo $row['qty']; ?>" class="form-control form-control-sm shadow-none" style="width: 100px;"></td>
                             <input type="hidden" name="qty_id[]" form="edit_form" id="qty_id" value="<?php echo $row['qty_id']; ?>" class="form-control">
                             <td class="pt-4"><?php echo $stat; ?></td>
+                            <td class="pt-4"><?php echo ucwords($row['fname']); ?></td>                        
                             <td class="pt-4"><?php echo $row['dates']; ?></td>                        
                         </tr>
                     <?php  }   ?>  
