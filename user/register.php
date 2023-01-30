@@ -3,7 +3,7 @@
     include_once("../partials/session.php");
     include_once("../partials/connection.php");
     include("../layouts/header.php");
-    include_once("../partials/login_navbar.php");
+    include_once("../partials/navbar.php");
     include_once("../partials/breadcrumb.php");
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){

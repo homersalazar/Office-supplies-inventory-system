@@ -36,6 +36,16 @@
                     </div>
                 </div>
             </nav>
+            <div class="hero-main">
+                <div class="hero-text-container">
+                    <h1><span>Global</span> Store</h1>
+                    <p style="font-style: italic; font-size: 28px; font-family: 'Cursive', 'Lucida Handwriting';">PLACING AN ORDER SOON!, DOES ANYONE NEED ANYTHING?</p>
+                    <button class="text-light">Order Now!</button>
+                </div>
+                <div class="hero-image-container">
+                    <img src="../assets/home-office-supplies.png" alt="home office supplies" style="width: 600px; height:600px;" />
+                </div>
+            </div>
         </div>
     </div>
     <div class="product-section">

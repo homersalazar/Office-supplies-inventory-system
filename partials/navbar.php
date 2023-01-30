@@ -15,7 +15,7 @@
                     <?php if($_SESSION['UserType'] == "0"){ ?> <!-- 0 = admin , 1 = user  -->
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" aria-current="page" href="../dashboard/index.php">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../admin_interface/add_product.php">Products</a>
